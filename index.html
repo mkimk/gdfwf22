@@ -73,7 +73,81 @@
         
         @media screen and (min-width: 710px) and (max-width: 780px) {            /* Colleen */
             /* Alex */
-        }
+            body {
+                background-color: #FFFFFF;
+                animation-name: backgroundColorPalette2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes backgroundColorPalette2 {
+                    0% {
+                background: antiquewhite;
+                    }
+                    25% {
+                background: navajowhite;
+                    }
+                    50% {
+                background: whitesmoke;
+                    }
+                    75% {
+                background: ghostwhite;
+                    }
+                    100% {
+                background: floralwhite;
+                     }
+            }
+            [id^=div] {
+                display: none;
+            }
+            #div3 {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10vw;
+                height: 10vw;
+                padding: 20%;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                animation: circle-to-square 2.5s .5s infinite cubic-bezier(0,.03,.295,0.225) alternate-reverse;   
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes circle-to-square {
+                0%  {
+                    border-radius:0 0 0 0;
+                    background: cyan;
+                    transform:rotate(45deg);
+                    left:0px; top:50px;
+                }
+                25%  {
+                    border-radius:50% 0 0 0;
+                    background:darksalmon;
+                    transform:rotate(135deg);
+                    left:400px; top:100px;
+                }
+                50%  {
+                    border-radius:50% 50% 0 0;
+                    background:indianred;
+                    transform:rotate(180deg);
+                    left:0px; top:600px;
+                }
+                75%  { 
+                    border-radius:50% 50% 50% 0;
+                    background:lightcoral;
+                    transform:rotate(315deg);
+                    left:400px; top:100px;
+                }
+                100% {  
+                    border-radius:50%;
+                    background:darksalmon;
+                    transform:rotate(404deg);
+                    left:0px; top:0px;
+                }
+            }
+          }
+        
         
         @media screen and (min-width: 640px) and (max-width: 710px) {
             /* Nicole */
