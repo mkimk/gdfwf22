@@ -1,4 +1,4 @@
-# Graphic Design For the Web, 2022; Media Query Relay 
+# Media Query Relay 2022
 
 Media Query Relay by 15 students in Graphic Design for the Web, Fall 2022:<br>
 Nicole Lee<br>
