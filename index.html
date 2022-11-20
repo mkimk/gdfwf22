@@ -37,6 +37,54 @@
         
         @media screen and (min-width: 1340px) and (max-width: 1410px) {
             /* Valia */
+
+            body {
+                transition: ease-in-out 0.5s;
+                background-color: rgb(211, 133, 235);
+            }
+
+            #div1 {
+                background-image: url(images/nature.png);
+                display: block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                margin: -8px;
+                mix-blend-mode: multiply;
+            }
+
+            #div12 {
+                position: fixed;
+                top: 22.5vh;
+                left: 10vw;
+                transform: rotate(0deg);
+                border: 1.5px solid white;
+                animation: shrink 2s ease infinite;
+                border-radius: 0;
+                mix-blend-mode: difference;
+            }
+
+            @keyframes shrink {
+                    0% {
+                        background-color: rgb(255, 68, 186);
+                        height: 50vh;
+                        width: 50vh;
+                    }
+
+                    50% {
+                        background-color: rgb(84, 255, 68);
+                        height: 10vh;
+                        width: 10vh;
+                    }
+
+                    100% {
+                        background-color: rgb(255, 68, 186);
+                        height: 50vh;
+                        width: 50vh;
+                    }
+                }
         }
         
         @media screen and (min-width: 1270px) and (max-width: 1340px) {
