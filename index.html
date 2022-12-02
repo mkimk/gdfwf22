@@ -29,6 +29,64 @@
         
         @media screen and (min-width: 1480px) and (max-width: 1550px)  {
             /* Grace */
+
+            body {
+                animation: gradient 5s ease infinite;
+            }
+            @keyframes gradient {
+                0% {
+                    background-image: linear-gradient(-45deg, yellow, #3ce783, #23d2d5, #78ffe0);
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-image: linear-gradient(-45deg,  #3ce783, #23d2d5, #78ffe0);
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-image: linear-gradient(-45deg,  #23d2d5, #78ffe0);
+                    background-position: 0% 50%;
+                }
+            }
+            #div13 { 
+                position: absolute;
+                top: 35%;
+                left: 40%;
+                transform: translate(-505, -50%);
+                width: 100px;
+                height: 100px;
+                background: #23d2d5;
+                border: 1px solid white;
+                border-radius: 50%;
+                box-sizing: border-box;
+                box-shadow: 0 0 0 36px #23d2d5,
+                    0 0 0 40px lightcyan;
+            }
+
+            #div13:before, #div13:after {
+                content: '';
+                position: absolute;
+                left: -30px;
+                top: -30px;
+                right: -30px;
+                bottom: -30px;
+                border: 2px solid white;
+                border-radius: 50%;
+                animation: animate 2s linear infinite
+            }
+
+            #div13:after {
+                animation-delay: 2s;
+            }
+            @keyframes animate {
+            0% {
+                transform: scale(5.0);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            }
+  
+            100% {
+                transform: scale(1.0);
+            }
+        }
         }
         
         @media screen and (min-width: 1410px) and (max-width: 1480px) {
